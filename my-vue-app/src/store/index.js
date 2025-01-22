@@ -3,19 +3,16 @@ import { thunk } from "redux-thunk";
 
 const initialState = {
     dataMovies: [],
-    
+    dataCoba: "Aku terpanggil"
 }
 
-export const reducer = (state = initialState, action) => {
+const reducer = (state = initialState, action) => {
     console.log(action);
     
     switch (action.type) {
         
         case "CHANGE_DATA_MOVIE":
-            return { ...state, dataMovies: action.payload }  ;
-        
-        case "SET_MOVIES":
-                return { ...state, movies: action.payload };
+            return { ...state, dataMovies: action.payload }  
                
         default:
             return state;

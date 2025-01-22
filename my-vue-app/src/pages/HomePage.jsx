@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { apiGetMoviesNowPlaying, apiGetMoviesSearch} from "../store/action";
+import { apiGetMoviesNowPlaying } from "../store/action";
 import CardComponent from "../component/CardComponent";
 
 export default function HomePage() {
@@ -9,8 +9,7 @@ const dataMovies = useSelector(state => state.dataMovies)
 const dispatch = useDispatch()
 
 useEffect (() => {
-    dispatch(apiGetMoviesNowPlaying());
-    dispatch(apiGetMoviesSearch())
+    dispatch(apiGetMoviesNowPlaying())
 }, [])
 
 return(
