@@ -42,9 +42,9 @@ export default function NavbarComponent () {
             <Dropdown options={options} onChange={(event) => handleOnSelect (event)} value={"now_playing"} placeholder="select an option"/>
         </li>
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
+      <form className="d-flex" role="search">
+        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button className="btn btn-outline-success" type="submit">Search</button>
       </form>
       
     </div>

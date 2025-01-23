@@ -18,7 +18,7 @@ return(
     <div className="row">
     {
         dataMovies.map(el => (
-            <CardComponent original_title={el.original_title} popularity={el.popularity} overview={el.overview} release_date={el.release_date} poster_path={el.poster_path}/>
+            <CardComponent key={el.id} original_title={el.original_title} popularity={el.popularity} overview={el.overview} release_date={el.release_date} poster_path={el.poster_path}/>
         ))
 
     }
